@@ -2,21 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Second Video</title>
+  <title>Renergia 1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      background: white;
+      background: #fff;
+      font-family: 'Inter', sans-serif;
       overflow: hidden;
     }
 
     .video-container {
       width: 100vw;
       height: 100vh;
-      border-radius: 25px;
+      border-radius: 20px;
       overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      pointer-events: none;
     }
 
     video {
@@ -24,6 +28,7 @@
       height: 100%;
       object-fit: cover;
       pointer-events: none;
+      display: block;
     }
   </style>
 </head>
