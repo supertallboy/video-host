@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>GitHub Video Embed</title>
+  <title>Rayscape 1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      background: white;
+      background: #fff;
+      font-family: 'Inter', sans-serif;
       overflow: hidden;
     }
 
@@ -17,6 +19,8 @@
       height: 100vh;
       border-radius: 20px;
       overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      pointer-events: none;
     }
 
     video {
@@ -24,13 +28,14 @@
       height: 100%;
       object-fit: cover;
       pointer-events: none;
+      display: block;
     }
   </style>
 </head>
 <body>
   <div class="video-container">
     <video autoplay muted loop playsinline>
-      <source src="0001-0250.mp4" type="video/mp4">
+      <source src="rayscape1.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
