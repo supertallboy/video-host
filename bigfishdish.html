@@ -43,4 +43,40 @@
 
     #hoverVideo {
       opacity: 0;
-      z-index:
+      z-index: 1;
+    }
+
+    .active #coverImage {
+      opacity: 0;
+    }
+
+    .active #hoverVideo {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container" id="videoContainer">
+    <img src="bigfishdish.png" alt="Cover Image" id="coverImage">
+    <video muted loop playsinline id="hoverVideo">
+      <source src="bigfishdish.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <script>
+    const container = document.getElementById('videoContainer');
+    const video = document.getElementById('hoverVideo');
+
+    container.addEventListener('mouseenter', () => {
+      container.classList.add('active');
+      video.play();
+    });
+
+    container.addEventListener('mouseleave', () => {
+      video.pause();
+      container.classList.remove('active');
+    });
+  </script>
+</body>
+</html>
